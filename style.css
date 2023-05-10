@@ -76,6 +76,6 @@ button {
     grid-template-columns: 1fr;
     grid-auto-rows: 200px;
     justify-content: center;
-    height: 440px;
+    height: 530px;
   }
 }
