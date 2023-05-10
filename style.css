@@ -67,4 +67,5 @@ button {
   font-size: 20px;
   margin: 30px auto;
   display: block;
+  cursor: pointer;
 }
