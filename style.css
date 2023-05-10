@@ -69,3 +69,13 @@ button {
   display: block;
   cursor: pointer;
 }
+
+@media screen and (max-width: 450px) {
+  .grid-container {
+    width: 300px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    justify-content: center;
+    height: 440px;
+  }
+}
