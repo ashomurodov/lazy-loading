@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-container {
+  width: 1000px;
+  height: 710px;
+  margin: auto;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 300px;
+  padding: 40px;
+  background-color: aquamarine;
+  margin-top: 100px;
+  gap: 30px;
+}
+.grid-item {
+  background-color: blueviolet;
+  padding: 30px;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lazy::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid #343434;
+  border-top-color: rgb(6, 255, 97);
+  animation: spin 1s linear infinite;
+  position: absolute;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  width: 300px;
+  padding: 18px;
+  border: none;
+  border: 2px solid rgb(112, 112, 112);
+  border-radius: 4px;
+  background-color: rgb(79, 255, 143);
+  font-size: 20px;
+  margin: 30px auto;
+  display: block;
+}
