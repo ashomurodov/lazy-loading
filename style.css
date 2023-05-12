@@ -37,6 +37,10 @@ img {
   position: relative;
 }
 
+.lazy {
+  position: relative;
+}
+
 .lazy::after {
   content: "";
   width: 40px;
@@ -45,6 +49,32 @@ img {
   border: 5px solid #343434;
   border-top-color: rgb(6, 255, 97);
   animation: spin 1s linear infinite;
+  position: absolute;
+}
+
+.lazy::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("istockphoto-1147544807-612x612.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.loaded {
+  background-color: black;
+  position: relative;
+  z-index: 4;
+}
+
+.loaded::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid rgb(6, 255, 97);
+  animation: spin .2s linear infinite;
   position: absolute;
 }
 
